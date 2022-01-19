@@ -1,7 +1,7 @@
 {
-  "name": "backend-boilerplate",
+  "name": "sistem-informasi-manajemen-pengguna-v1.0",
   "version": "1.0.0",
-  "description": "Backend Boilerplate",
+  "description": "User Management System V1.0",
   "main": "server.js",
   "scripts": {
     "dev": "npx nodemon ./src/server.js"

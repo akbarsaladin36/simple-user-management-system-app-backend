@@ -1,6 +1,6 @@
-<h1 align="center">Express - Backend Boilerplate with MySQL</h1>
+<h1 align="center">Express - Simple User Management System App for Backend</h1>
 
-This API is created by me to make backend job more easier. With this boilerplate, you can free to use, change, and add any request that you need for your backend website. This API use Express as Nodejs framework and MySQL as store database. [More about Express](https://en.wikipedia.org/wiki/Express.js)
+This API is created by me as personal project to create API for simple user management system. This API use Express as Nodejs framework and MySQL as store database. [More about Express](https://en.wikipedia.org/wiki/Express.js)
 
 ## Built With
 
