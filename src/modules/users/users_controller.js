@@ -32,18 +32,20 @@ module.exports = {
     },
     createUser: async (req, res) => {
         try {
-            const { userEmail, userPassword, userFirstName, userLastName, userAddress, userPhoneNumber } = req.body
+            const { userEmail, userPassword, userName, userFirstName, userLastName, userAddress, userPhoneNumber } = req.body
             const salt = bcrypt.genSaltSync(10)
             const encryptPassword = bcrypt.hashSync(userPassword, salt)
             const setData = {
                 user_email: userEmail,
                 user_password: encryptPassword,
+                user_username: userName,
                 user_first_name: userFirstName,
                 user_last_name: userLastName,
                 user_address: userAddress,
                 user_phone_number: userPhoneNumber,
                 user_status: 'staff',
-                user_verify: 'Y'
+                user_verify: 'Y',
+                user_created_at: new Date(Date.now())
             }
             const result = await usersModel.createNewData(setData)
             delete result.user_password

@@ -63,7 +63,7 @@ module.exports = {
     updateAttendances: async (req, res) => {
         try {
             const { id } = req.params
-            const { attendancesNotes, attendancesStatus, attendancesStopTime } = req.body
+            const { attendancesNotes, attendancesStatus } = req.body
             const result = await attendancesModel.getOneAttendancesData(id)
             if(result.length > 0) {
                 const setData = {
