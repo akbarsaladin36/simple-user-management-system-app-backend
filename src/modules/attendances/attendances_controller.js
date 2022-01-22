@@ -63,12 +63,11 @@ module.exports = {
     updateAttendances: async (req, res) => {
         try {
             const { id } = req.params
-            const { attendancesNotes, attendancesStatus } = req.body
+            const { attendancesNotes } = req.body
             const result = await attendancesModel.getOneAttendancesData(id)
             if(result.length > 0) {
                 const setData = {
                     attendances_notes: attendancesNotes,
-                    attendances_status: attendancesStatus,
                     attendances_stop_dttm: new Date(Date.now())
                 }
                 const newResult = await attendancesModel.updateOneAttendancesData(setData, id)

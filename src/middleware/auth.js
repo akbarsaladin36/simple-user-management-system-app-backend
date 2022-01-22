@@ -30,5 +30,13 @@ module.exports = {
     } else {
       return helper.response(res, 403, 'this page can be accessed by admin!')
     }
+  },
+
+  isStaff: (req, res, next) => {
+    if(req.decodeToken.user_status === 'staff') {
+      next()
+    } else {
+      return helper.response(res, 403, 'this page can be accessed by staff!')
+    }
   }
 }
