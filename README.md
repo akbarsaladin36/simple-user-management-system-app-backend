@@ -24,7 +24,7 @@ This API is created by me as personal project to create API for simple user mana
 5. Create a database with the name #nama_database, and Import file sql to **phpmyadmin**
 6. Open Postman desktop application or Chrome web app extension that has installed before
 7. Choose HTTP Method and enter request url.(ex. localhost:3000/)
-8. You can see all the end point [here](https://documenter.getpostman.com/view/14780095/TzzBpFnu)
+8. You can see all the end point [here](https://documenter.getpostman.com/view/14780095/UVXqECiP)
 9. Type `npm run dev` to activated the server.
 
 ## Set up .env file
@@ -40,11 +40,19 @@ DB_DATABASES= <YOUR DATABASE NAME>
 
 SMTP_EMAIL = <YOUR EMAIL>
 SMTP_PASSWORD = <YOUR PASSWORD>
+JWT_SECRETKEY = <YOUR JWT SECRET KEY>
 ```
 
 ## Feature
 
 1. Login and Register API
+2. Get All Data for Users
+3. Get One Data for User
+4. Create, Update, and Delete Users
+5. Get All Data for Attendances
+6. Get One Data for Attendances
+7. Get All Data from User for Attendances
+8. Create, Update and Delete Users
 
 ## License
 
